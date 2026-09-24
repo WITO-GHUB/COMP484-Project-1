@@ -1,0 +1,148 @@
+html, body {
+    background: #808080;
+    margin: 0;
+    padding:0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(107, 107, 132);
+}
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    background: white;
+    line-height: 1.8;
+}
+
+h1 {
+    font: 1.6em Courier;
+    margin-bottom: 0;
+    color: rgb(156, 105, 67); /* brown */
+}
+h2 {
+    font: 3.2em Courier;
+    margin-bottom: .2em;
+}
+h3 {
+    font-size: 1.2em;
+}
+h4 {
+    margin-bottom: 0;
+}
+
+.brand {
+    padding-left: 3em;
+}
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+}
+p {
+    margin-bottom: 1em;
+}
+a {
+    color: rgb(67, 144, 156) /* cyan */
+}
+a:hover {
+    color: rgb(67, 144, 156) /* cyan */
+}
+
+h1 a,
+h1 a:hover,
+h1 a:visited {
+    color: var(--black);
+    text-decoration: none;
+}
+
+dt {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+dd {
+    margin-bottom: 1.4em;
+}
+
+table {
+    margin-top: 1em;
+}
+
+caption {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    text-align: left;
+}
+td, th{
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+header h2 {
+    padding-bottom: .2em;
+    border-bottom: 1px solid gray;
+}
+
+header h4 {
+    margin-top: 0;
+    margin-bottom: .8em;
+    line-height: 1.2;
+}
+aside {
+    padding: 1em;
+    background: rgb(128, 128, 128); /* gray */
+    color: white;
+}
+aside h4 {
+    color: white;
+}
+footer {
+    border-top: 1px solid gray;
+    text-align: center;
+    font-size: .8em;
+    line-height: 4em;
+    margin-top: 1em;
+}
+
+:root {
+    --black: #1c1c1c;
+    --brown: #5c4033;
+    --tan: #c8ad8d;
+    --grey: #8a8a8a;
+    --white: #faf8f5;
+}
+
+nav {
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Makes navigation bar horizontal */
+    justify-content: center; /* Centers content in nav bar */
+    flex-wrap: wrap;
+    background: var(--black);
+}
+
+nav a {
+    display: block;
+    padding: .75em 1.5em;
+    color: var(--tan);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: .9em;
+}
+
+nav a:hover,
+nav a:focus{
+    background: var(--brown);
+    color: var(--white);
+}
+nav a[aria-current="page"] {
+    border-bottom: 2px solid var(--tan);
+}
