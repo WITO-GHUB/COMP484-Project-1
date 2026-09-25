@@ -18,10 +18,22 @@
                         <li><a href = "services.html">Services</a></li>
                         <li><a href = "gallery.html">Gallery</a></li>
                     </ul>
+                    <label for="service-select">Choose a service to book: </label>
+                    <select id ="service-select">
+                        <optgroup label ="Cut"> <!--- Optgroup element, fulfills 2/3 required element tags -->
+                            <option> Haircut </option>
+                            <option> Beard </option>
+                            <option> Eyebrows </option>
+                        </optgroup>
+                        <optgroup label ="other">
+                            <option> Perm </option>
+                            <option> Color /option>
+                        </optgroup>
+                    </select>
                 </nav>
             </header>
             <main>
-                <object type ="video/mp4" data="videos/transformation.mp4" width="640" height="360">
+                <object type ="video/mp4" data="videos/transformation.mp4" width="640" height="360"> <!-- Video object, fulfills 1/3 element tag requirements -->
                 </object>
             </main>
             <footer role ="contentinfo">
