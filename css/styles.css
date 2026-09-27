@@ -183,3 +183,9 @@ img {
     max-height: 500px;
     object-fit: cover;
 }
+
+/* Image sizes for gallery */
+main img{
+    margin: .5em;
+    vertical-align: top;
+}
