@@ -1,12 +1,16 @@
+/* Gray background */
 html, body {
     background: #808080;
     margin: 0;
     padding:0;
 }
 
+/* Header styling */
 h1, h2, h3, h4, h5, h6 {
     color: rgb(107, 107, 132);
 }
+
+/* Font, white background, spacing */
 body {
     font-family: Verdana, Geneva, sans-serif;
     background: white;
@@ -32,6 +36,7 @@ h4 {
 .brand {
     padding-left: 3em;
 }
+/* Center content, width limits */
 main {
     max-width: 1100px;
     margin: 0 auto;
@@ -47,6 +52,7 @@ a:hover {
     color: rgb(67, 144, 156) /* cyan */
 }
 
+/* Link to return home, located on top left */
 h1 a,
 h1 a:hover,
 h1 a:visited {
@@ -63,24 +69,29 @@ dd {
     margin-bottom: 1.4em;
 }
 
+/* Table */
 table {
     margin-top: 1em;
 }
 
+/* Table title text */
 caption {
     margin: 0;
     padding: 0;
     margin-bottom: 1em;
     text-align: left;
 }
+/* Spacing */
 td, th{
     padding: 10px;
 }
 
+/* Add center to any element to center text */
 .center {
     text-align: center;
 }
 
+/* Adds line underneath */
 header h2 {
     padding-bottom: .2em;
     border-bottom: 1px solid gray;
@@ -99,6 +110,8 @@ aside {
 aside h4 {
     color: white;
 }
+
+/* Page footer */
 footer {
     border-top: 1px solid gray;
     text-align: center;
@@ -107,6 +120,7 @@ footer {
     margin-top: 1em;
 }
 
+/* CSS Variables for color */
 :root {
     --black: #1c1c1c;
     --brown: #5c4033;
@@ -115,10 +129,12 @@ footer {
     --white: #faf8f5;
 }
 
+/* Nav container */
 nav {
     padding: 0;
 }
 
+/* Nav list */
 nav ul {
     list-style: none;
     margin: 0;
@@ -129,6 +145,7 @@ nav ul {
     background: var(--black);
 }
 
+/* Nav links */
 nav a {
     display: block;
     padding: .75em 1.5em;
@@ -137,9 +154,9 @@ nav a {
     letter-spacing: .08em;
     font-size: .9em;
 }
-
+/* Mouse hover over nav */
 nav a:hover,
-nav a:focus{
+nav a:focus{    /* Tab for nav */
     background: var(--brown);
     color: var(--white);
 }
@@ -153,12 +170,14 @@ img {
     height: auto;
 }
 
+/* Puts text and image side by side in index.html */
 .intro {
     display: flex;
     align-items: center;
     gap: 3em;
 }
 
+/* Text and image share equal space */
 .intro-text {
     flex: 1;
 }
@@ -169,6 +188,7 @@ img {
     color: var(--brown);
 }
 
+/* Intro image is half of the space */
 .intro img {
     flex: 1;
     width: 100%;
@@ -176,6 +196,7 @@ img {
     object-fit: cover;
 }
 
+/* Image in bio */
 .bio img {
     display: block;
     margin: 1.5em auto;
